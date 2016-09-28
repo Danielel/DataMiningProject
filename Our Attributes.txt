@@ -1,0 +1,15 @@
+dAge
+iClass
+dHour89
+iMobility
+iRagechld
+iRiders
+dWeek89
+iYearsch
+iYearwrk
+iSex
+iEnglish
+iLang1
+dPwgt1
+dAncstry1
+dAncstry2
