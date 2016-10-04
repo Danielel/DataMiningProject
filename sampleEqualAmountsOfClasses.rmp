@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="7.2.002">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="7.2.002" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="retrieve" compatibility="7.2.002" expanded="true" height="68" name="Retrieve" width="90" x="45" y="289">
+        <parameter key="repository_entry" value="../data/MakeCensusDataWithLessAttribAndValues"/>
+      </operator>
+      <operator activated="true" class="multiply" compatibility="7.2.002" expanded="true" height="187" name="Multiply" width="90" x="246" y="289"/>
+      <operator activated="true" class="filter_examples" compatibility="7.2.002" expanded="true" height="103" name="Filter Examples (5)" width="90" x="380" y="544">
+        <parameter key="parameter_expression" value=""/>
+        <parameter key="condition_class" value="custom_filters"/>
+        <parameter key="invert_filter" value="false"/>
+        <list key="filters_list">
+          <parameter key="filters_entry_key" value="dRearning.eq.5"/>
+        </list>
+        <parameter key="filters_logic_and" value="false"/>
+        <parameter key="filters_check_metadata" value="true"/>
+      </operator>
+      <operator activated="true" class="sample" compatibility="7.2.002" expanded="true" height="82" name="Sample (6)" width="90" x="514" y="544">
+        <parameter key="sample" value="absolute"/>
+        <parameter key="balance_data" value="false"/>
+        <parameter key="sample_size" value="3500"/>
+        <parameter key="sample_ratio" value="0.1"/>
+        <parameter key="sample_probability" value="0.1"/>
+        <list key="sample_size_per_class">
+          <parameter key="0" value="10000"/>
+        </list>
+        <list key="sample_ratio_per_class"/>
+        <list key="sample_probability_per_class"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+      </operator>
+      <operator activated="true" class="filter_examples" compatibility="7.2.002" expanded="true" height="103" name="Filter Examples (4)" width="90" x="380" y="442">
+        <parameter key="parameter_expression" value=""/>
+        <parameter key="condition_class" value="custom_filters"/>
+        <parameter key="invert_filter" value="false"/>
+        <list key="filters_list">
+          <parameter key="filters_entry_key" value="dRearning.eq.4"/>
+        </list>
+        <parameter key="filters_logic_and" value="false"/>
+        <parameter key="filters_check_metadata" value="true"/>
+      </operator>
+      <operator activated="true" class="sample" compatibility="7.2.002" expanded="true" height="82" name="Sample (5)" width="90" x="514" y="442">
+        <parameter key="sample" value="absolute"/>
+        <parameter key="balance_data" value="false"/>
+        <parameter key="sample_size" value="3500"/>
+        <parameter key="sample_ratio" value="0.1"/>
+        <parameter key="sample_probability" value="0.1"/>
+        <list key="sample_size_per_class">
+          <parameter key="0" value="10000"/>
+        </list>
+        <list key="sample_ratio_per_class"/>
+        <list key="sample_probability_per_class"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+      </operator>
+      <operator activated="true" class="filter_examples" compatibility="7.2.002" expanded="true" height="103" name="Filter Examples (6)" width="90" x="380" y="340">
+        <parameter key="parameter_expression" value=""/>
+        <parameter key="condition_class" value="custom_filters"/>
+        <parameter key="invert_filter" value="false"/>
+        <list key="filters_list">
+          <parameter key="filters_entry_key" value="dRearning.eq.3"/>
+        </list>
+        <parameter key="filters_logic_and" value="false"/>
+        <parameter key="filters_check_metadata" value="true"/>
+      </operator>
+      <operator activated="true" class="sample" compatibility="7.2.002" expanded="true" height="82" name="Sample (4)" width="90" x="514" y="340">
+        <parameter key="sample" value="absolute"/>
+        <parameter key="balance_data" value="false"/>
+        <parameter key="sample_size" value="3500"/>
+        <parameter key="sample_ratio" value="0.1"/>
+        <parameter key="sample_probability" value="0.1"/>
+        <list key="sample_size_per_class">
+          <parameter key="0" value="10000"/>
+        </list>
+        <list key="sample_ratio_per_class"/>
+        <list key="sample_probability_per_class"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+      </operator>
+      <operator activated="true" class="filter_examples" compatibility="7.2.002" expanded="true" height="103" name="Filter Examples (2)" width="90" x="380" y="238">
+        <parameter key="parameter_expression" value=""/>
+        <parameter key="condition_class" value="custom_filters"/>
+        <parameter key="invert_filter" value="false"/>
+        <list key="filters_list">
+          <parameter key="filters_entry_key" value="dRearning.eq.2"/>
+        </list>
+        <parameter key="filters_logic_and" value="false"/>
+        <parameter key="filters_check_metadata" value="true"/>
+      </operator>
+      <operator activated="true" class="sample" compatibility="7.2.002" expanded="true" height="82" name="Sample (2)" width="90" x="514" y="238">
+        <parameter key="sample" value="absolute"/>
+        <parameter key="balance_data" value="false"/>
+        <parameter key="sample_size" value="3500"/>
+        <parameter key="sample_ratio" value="0.1"/>
+        <parameter key="sample_probability" value="0.1"/>
+        <list key="sample_size_per_class">
+          <parameter key="0" value="10000"/>
+        </list>
+        <list key="sample_ratio_per_class"/>
+        <list key="sample_probability_per_class"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+      </operator>
+      <operator activated="true" class="filter_examples" compatibility="7.2.002" expanded="true" height="103" name="Filter Examples (3)" width="90" x="380" y="136">
+        <parameter key="parameter_expression" value=""/>
+        <parameter key="condition_class" value="custom_filters"/>
+        <parameter key="invert_filter" value="false"/>
+        <list key="filters_list">
+          <parameter key="filters_entry_key" value="dRearning.eq.1"/>
+        </list>
+        <parameter key="filters_logic_and" value="false"/>
+        <parameter key="filters_check_metadata" value="true"/>
+      </operator>
+      <operator activated="true" class="sample" compatibility="7.2.002" expanded="true" height="82" name="Sample (3)" width="90" x="514" y="136">
+        <parameter key="sample" value="absolute"/>
+        <parameter key="balance_data" value="false"/>
+        <parameter key="sample_size" value="3500"/>
+        <parameter key="sample_ratio" value="0.1"/>
+        <parameter key="sample_probability" value="0.1"/>
+        <list key="sample_size_per_class">
+          <parameter key="0" value="10000"/>
+        </list>
+        <list key="sample_ratio_per_class"/>
+        <list key="sample_probability_per_class"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+      </operator>
+      <operator activated="true" class="filter_examples" compatibility="7.2.002" expanded="true" height="103" name="Filter Examples" width="90" x="380" y="34">
+        <parameter key="parameter_expression" value=""/>
+        <parameter key="condition_class" value="custom_filters"/>
+        <parameter key="invert_filter" value="false"/>
+        <list key="filters_list">
+          <parameter key="filters_entry_key" value="dRearning.eq.0"/>
+        </list>
+        <parameter key="filters_logic_and" value="false"/>
+        <parameter key="filters_check_metadata" value="true"/>
+      </operator>
+      <operator activated="false" class="generate_attributes" compatibility="7.2.002" expanded="true" height="82" name="Generate Attributes" width="90" x="849" y="646">
+        <list key="function_descriptions">
+          <parameter key="earning" value="str(dRearning)"/>
+        </list>
+        <parameter key="keep_all" value="true"/>
+      </operator>
+      <operator activated="false" class="set_role" compatibility="7.2.002" expanded="true" height="82" name="Set Role" width="90" x="849" y="442">
+        <parameter key="attribute_name" value="earning"/>
+        <parameter key="target_role" value="label"/>
+        <list key="set_additional_roles"/>
+      </operator>
+      <operator activated="true" class="sample" compatibility="7.2.002" expanded="true" height="82" name="Sample" width="90" x="514" y="34">
+        <parameter key="sample" value="absolute"/>
+        <parameter key="balance_data" value="false"/>
+        <parameter key="sample_size" value="3500"/>
+        <parameter key="sample_ratio" value="0.1"/>
+        <parameter key="sample_probability" value="0.1"/>
+        <list key="sample_size_per_class">
+          <parameter key="0" value="10000"/>
+        </list>
+        <list key="sample_ratio_per_class"/>
+        <list key="sample_probability_per_class"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+      </operator>
+      <operator activated="true" class="append" compatibility="7.2.002" expanded="true" height="187" name="Append (2)" width="90" x="715" y="289">
+        <parameter key="datamanagement" value="double_array"/>
+        <parameter key="merge_type" value="all"/>
+      </operator>
+      <operator activated="true" class="store" compatibility="7.2.002" expanded="true" height="68" name="Store" width="90" x="849" y="289">
+        <parameter key="repository_entry" value="../data/PreprocessedWithEqualClasses"/>
+      </operator>
+      <connect from_op="Retrieve" from_port="output" to_op="Multiply" to_port="input"/>
+      <connect from_op="Multiply" from_port="output 1" to_op="Filter Examples" to_port="example set input"/>
+      <connect from_op="Multiply" from_port="output 2" to_op="Filter Examples (3)" to_port="example set input"/>
+      <connect from_op="Multiply" from_port="output 3" to_op="Filter Examples (2)" to_port="example set input"/>
+      <connect from_op="Multiply" from_port="output 4" to_op="Filter Examples (6)" to_port="example set input"/>
+      <connect from_op="Multiply" from_port="output 5" to_op="Filter Examples (4)" to_port="example set input"/>
+      <connect from_op="Multiply" from_port="output 6" to_op="Filter Examples (5)" to_port="example set input"/>
+      <connect from_op="Filter Examples (5)" from_port="example set output" to_op="Sample (6)" to_port="example set input"/>
+      <connect from_op="Sample (6)" from_port="example set output" to_op="Append (2)" to_port="example set 6"/>
+      <connect from_op="Filter Examples (4)" from_port="example set output" to_op="Sample (5)" to_port="example set input"/>
+      <connect from_op="Sample (5)" from_port="example set output" to_op="Append (2)" to_port="example set 5"/>
+      <connect from_op="Filter Examples (6)" from_port="example set output" to_op="Sample (4)" to_port="example set input"/>
+      <connect from_op="Sample (4)" from_port="example set output" to_op="Append (2)" to_port="example set 4"/>
+      <connect from_op="Filter Examples (2)" from_port="example set output" to_op="Sample (2)" to_port="example set input"/>
+      <connect from_op="Sample (2)" from_port="example set output" to_op="Append (2)" to_port="example set 3"/>
+      <connect from_op="Filter Examples (3)" from_port="example set output" to_op="Sample (3)" to_port="example set input"/>
+      <connect from_op="Sample (3)" from_port="example set output" to_op="Append (2)" to_port="example set 2"/>
+      <connect from_op="Filter Examples" from_port="example set output" to_op="Sample" to_port="example set input"/>
+      <connect from_op="Sample" from_port="example set output" to_op="Append (2)" to_port="example set 1"/>
+      <connect from_op="Append (2)" from_port="merged set" to_op="Store" to_port="input"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+    </process>
+  </operator>
+</process>
