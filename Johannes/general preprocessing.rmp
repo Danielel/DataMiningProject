@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="7.2.002">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="7.2.002" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="read_csv" compatibility="7.2.002" expanded="true" height="68" name="Read CSV" width="90" x="45" y="85">
+        <parameter key="csv_file" value="C:\Users\Johannes\Desktop\DM Project\Census Data\USCensus1990.data.txt"/>
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="date_format" value=""/>
+        <parameter key="first_row_as_names" value="false"/>
+        <list key="annotations">
+          <parameter key="0" value="Name"/>
+        </list>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="windows-1252"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="caseid.true.integer.id"/>
+          <parameter key="1" value="dAge.true.integer.attribute"/>
+          <parameter key="2" value="dAncstry1.true.integer.attribute"/>
+          <parameter key="3" value="dAncstry2.true.integer.attribute"/>
+          <parameter key="4" value="iAvail.true.integer.attribute"/>
+          <parameter key="5" value="iCitizen.true.integer.attribute"/>
+          <parameter key="6" value="iClass.true.integer.attribute"/>
+          <parameter key="7" value="dDepart.true.integer.attribute"/>
+          <parameter key="8" value="iDisabl1.true.integer.attribute"/>
+          <parameter key="9" value="iDisabl2.true.integer.attribute"/>
+          <parameter key="10" value="iEnglish.true.integer.attribute"/>
+          <parameter key="11" value="iFeb55.true.integer.attribute"/>
+          <parameter key="12" value="iFertil.true.integer.attribute"/>
+          <parameter key="13" value="dHispanic.true.integer.attribute"/>
+          <parameter key="14" value="dHour89.true.integer.attribute"/>
+          <parameter key="15" value="dHours.true.integer.attribute"/>
+          <parameter key="16" value="iImmigr.true.integer.attribute"/>
+          <parameter key="17" value="dIncome1.true.integer.attribute"/>
+          <parameter key="18" value="dIncome2.true.integer.attribute"/>
+          <parameter key="19" value="dIncome3.true.integer.attribute"/>
+          <parameter key="20" value="dIncome4.true.integer.attribute"/>
+          <parameter key="21" value="dIncome5.true.integer.attribute"/>
+          <parameter key="22" value="dIncome6.true.integer.attribute"/>
+          <parameter key="23" value="dIncome7.true.integer.attribute"/>
+          <parameter key="24" value="dIncome8.true.integer.attribute"/>
+          <parameter key="25" value="dIndustry.true.integer.attribute"/>
+          <parameter key="26" value="iKorean.true.integer.attribute"/>
+          <parameter key="27" value="iLang1.true.integer.attribute"/>
+          <parameter key="28" value="iLooking.true.integer.attribute"/>
+          <parameter key="29" value="iMarital.true.integer.attribute"/>
+          <parameter key="30" value="iMay75880.true.integer.attribute"/>
+          <parameter key="31" value="iMeans.true.integer.attribute"/>
+          <parameter key="32" value="iMilitary.true.integer.attribute"/>
+          <parameter key="33" value="iMobility.true.integer.attribute"/>
+          <parameter key="34" value="iMobillim.true.integer.attribute"/>
+          <parameter key="35" value="dOccup.true.integer.attribute"/>
+          <parameter key="36" value="iOthrserv.true.integer.attribute"/>
+          <parameter key="37" value="iPerscare.true.integer.attribute"/>
+          <parameter key="38" value="dPOB.true.integer.attribute"/>
+          <parameter key="39" value="dPoverty.true.integer.attribute"/>
+          <parameter key="40" value="dPwgt1.true.integer.attribute"/>
+          <parameter key="41" value="iRagechld.true.integer.attribute"/>
+          <parameter key="42" value="dRearning.true.integer.attribute"/>
+          <parameter key="43" value="iRelat1.true.integer.attribute"/>
+          <parameter key="44" value="iRelat2.true.integer.attribute"/>
+          <parameter key="45" value="iRemplpar.true.integer.attribute"/>
+          <parameter key="46" value="iRiders.true.integer.attribute"/>
+          <parameter key="47" value="iRlabor.true.integer.attribute"/>
+          <parameter key="48" value="iRownchld.true.integer.attribute"/>
+          <parameter key="49" value="dRpincome.true.integer.attribute"/>
+          <parameter key="50" value="iRPOB.true.integer.attribute"/>
+          <parameter key="51" value="iRrelchld.true.integer.attribute"/>
+          <parameter key="52" value="iRspouse.true.integer.attribute"/>
+          <parameter key="53" value="iRvetserv.true.integer.attribute"/>
+          <parameter key="54" value="iSchool.true.integer.attribute"/>
+          <parameter key="55" value="iSept80.true.integer.attribute"/>
+          <parameter key="56" value="iSex.true.integer.attribute"/>
+          <parameter key="57" value="iSubfam1.true.integer.attribute"/>
+          <parameter key="58" value="iSubfam2.true.integer.attribute"/>
+          <parameter key="59" value="iTmpabsnt.true.integer.attribute"/>
+          <parameter key="60" value="dTravtime.true.integer.attribute"/>
+          <parameter key="61" value="iVietnam.true.integer.attribute"/>
+          <parameter key="62" value="dWeek89.true.integer.attribute"/>
+          <parameter key="63" value="iWork89.true.integer.attribute"/>
+          <parameter key="64" value="iWorklwk.true.integer.attribute"/>
+          <parameter key="65" value="iWWII.true.integer.attribute"/>
+          <parameter key="66" value="iYearsch.true.integer.attribute"/>
+          <parameter key="67" value="iYearwrk.true.integer.attribute"/>
+          <parameter key="68" value="dYrsserv.true.integer.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+        <parameter key="datamanagement" value="double_array"/>
+      </operator>
+      <operator activated="true" class="subprocess" compatibility="7.2.002" expanded="true" height="82" name="Preprocess" width="90" x="246" y="85">
+        <process expanded="true">
+          <operator activated="true" class="filter_examples" compatibility="7.2.002" expanded="true" height="103" name="-dRearning 1" width="90" x="179" y="34">
+            <parameter key="parameter_expression" value=""/>
+            <parameter key="condition_class" value="custom_filters"/>
+            <parameter key="invert_filter" value="true"/>
+            <list key="filters_list">
+              <parameter key="filters_entry_key" value="dRearning.eq.1"/>
+            </list>
+            <parameter key="filters_logic_and" value="true"/>
+            <parameter key="filters_check_metadata" value="true"/>
+          </operator>
+          <operator activated="true" class="select_attributes" compatibility="7.2.002" expanded="true" height="82" name="-Income" width="90" x="313" y="34">
+            <parameter key="attribute_filter_type" value="subset"/>
+            <parameter key="attribute" value=""/>
+            <parameter key="attributes" value="dIncome2|dIncome3|dIncome4|dIncome5|dIncome6|dIncome7|dIncome8|dRpincome|dIncome1"/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="attribute_value"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="time"/>
+            <parameter key="block_type" value="attribute_block"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="value_matrix_row_start"/>
+            <parameter key="invert_selection" value="true"/>
+            <parameter key="include_special_attributes" value="false"/>
+          </operator>
+          <operator activated="true" class="filter_examples" compatibility="7.2.002" expanded="true" height="103" name="-Too old and young" width="90" x="514" y="34">
+            <parameter key="parameter_expression" value=""/>
+            <parameter key="condition_class" value="custom_filters"/>
+            <parameter key="invert_filter" value="true"/>
+            <list key="filters_list">
+              <parameter key="filters_entry_key" value="dAge.eq.7"/>
+              <parameter key="filters_entry_key" value="dAge.lt.3"/>
+            </list>
+            <parameter key="filters_logic_and" value="false"/>
+            <parameter key="filters_check_metadata" value="true"/>
+          </operator>
+          <operator activated="true" class="filter_examples" compatibility="7.2.002" expanded="true" height="103" name="-N/a" width="90" x="715" y="34">
+            <parameter key="parameter_expression" value=""/>
+            <parameter key="condition_class" value="custom_filters"/>
+            <parameter key="invert_filter" value="true"/>
+            <list key="filters_list">
+              <parameter key="filters_entry_key" value="dAncstry1.eq.0"/>
+              <parameter key="filters_entry_key" value="dAncstry2.eq.0"/>
+              <parameter key="filters_entry_key" value="iLang1.eq.0"/>
+              <parameter key="filters_entry_key" value="iMilitary.eq.0"/>
+              <parameter key="filters_entry_key" value="iMobility.eq.0"/>
+              <parameter key="filters_entry_key" value="iPerscare.eq.0"/>
+              <parameter key="filters_entry_key" value="iRlabor.eq.0"/>
+              <parameter key="filters_entry_key" value="iRspouse.eq.0"/>
+              <parameter key="filters_entry_key" value="iWork89.eq.0"/>
+              <parameter key="filters_entry_key" value="iYearsch.eq.0"/>
+              <parameter key="filters_entry_key" value="iYearwrk.eq.0"/>
+            </list>
+            <parameter key="filters_logic_and" value="false"/>
+            <parameter key="filters_check_metadata" value="true"/>
+          </operator>
+          <connect from_port="in 1" to_op="-dRearning 1" to_port="example set input"/>
+          <connect from_op="-dRearning 1" from_port="example set output" to_op="-Income" to_port="example set input"/>
+          <connect from_op="-Income" from_port="example set output" to_op="-Too old and young" to_port="example set input"/>
+          <connect from_op="-Too old and young" from_port="example set output" to_op="-N/a" to_port="example set input"/>
+          <connect from_op="-N/a" from_port="example set output" to_port="out 1"/>
+          <portSpacing port="source_in 1" spacing="0"/>
+          <portSpacing port="source_in 2" spacing="0"/>
+          <portSpacing port="sink_out 1" spacing="0"/>
+          <portSpacing port="sink_out 2" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="split_data" compatibility="7.2.002" expanded="true" height="103" name="Split Data" width="90" x="514" y="85">
+        <enumeration key="partitions">
+          <parameter key="ratio" value="0.99"/>
+          <parameter key="ratio" value="0.01"/>
+        </enumeration>
+        <parameter key="sampling_type" value="shuffled sampling"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+      </operator>
+      <operator activated="true" class="store" compatibility="7.2.002" expanded="true" height="68" name="Store (2)" width="90" x="715" y="136">
+        <parameter key="repository_entry" value="//Local Repository/data/testing"/>
+      </operator>
+      <operator activated="true" class="store" compatibility="7.2.002" expanded="true" height="68" name="Store" width="90" x="715" y="34">
+        <parameter key="repository_entry" value="//Local Repository/data/training"/>
+      </operator>
+      <connect from_op="Read CSV" from_port="output" to_op="Preprocess" to_port="in 1"/>
+      <connect from_op="Preprocess" from_port="out 1" to_op="Split Data" to_port="example set"/>
+      <connect from_op="Split Data" from_port="partition 1" to_op="Store" to_port="input"/>
+      <connect from_op="Split Data" from_port="partition 2" to_op="Store (2)" to_port="input"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+    </process>
+  </operator>
+</process>
