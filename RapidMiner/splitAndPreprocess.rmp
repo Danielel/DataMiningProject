@@ -13,7 +13,7 @@
     <parameter key="encoding" value="SYSTEM"/>
     <process expanded="true">
       <operator activated="true" class="read_csv" compatibility="7.2.002" expanded="true" height="68" name="Read CSV" width="90" x="45" y="85">
-        <parameter key="csv_file" value="C:\Users\Johannes\Desktop\DM Project\Census Data\USCensus1990.data.txt"/>
+        <parameter key="csv_file" value="D:\Danne\Documents\USCensus1990.data.txt"/>
         <parameter key="column_separators" value=","/>
         <parameter key="trim_lines" value="false"/>
         <parameter key="use_quotes" value="true"/>
@@ -205,10 +205,10 @@
         <parameter key="local_random_seed" value="1992"/>
       </operator>
       <operator activated="true" class="store" compatibility="7.2.002" expanded="true" height="68" name="Store (2)" width="90" x="715" y="136">
-        <parameter key="repository_entry" value="//Local Repository/data/testing"/>
+        <parameter key="repository_entry" value="//Local Repository/data/training"/>
       </operator>
       <operator activated="true" class="store" compatibility="7.2.002" expanded="true" height="68" name="Store" width="90" x="715" y="34">
-        <parameter key="repository_entry" value="//Local Repository/data/training"/>
+        <parameter key="repository_entry" value="//Local Repository/data/testing"/>
       </operator>
       <connect from_op="Read CSV" from_port="output" to_op="Preprocess" to_port="in 1"/>
       <connect from_op="Preprocess" from_port="out 1" to_op="Split Data" to_port="example set"/>
