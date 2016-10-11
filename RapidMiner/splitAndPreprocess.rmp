@@ -105,8 +105,8 @@
       </operator>
       <operator activated="true" class="split_data" compatibility="7.2.002" expanded="true" height="103" name="Split Data" width="90" x="514" y="85">
         <enumeration key="partitions">
-          <parameter key="ratio" value="0.9"/>
           <parameter key="ratio" value="0.1"/>
+          <parameter key="ratio" value="0.9"/>
         </enumeration>
         <parameter key="sampling_type" value="shuffled sampling"/>
         <parameter key="use_local_random_seed" value="false"/>
